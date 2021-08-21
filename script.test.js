@@ -12,13 +12,24 @@ test('reverses a string',() =>{
 });
 
 function reverseString(str){
-// splits the string into an arr
-const splitString = str.split("");
-// reverse() method to reverse the newly created array
-const reverseArr = splitString.reverse();
-//use join method to join the arr
-const joinArr = reverseArr.join("");
-//return str.split("").reverse().join(""),can also be done in one line
-return joinArr;
+  // splits the string into an arr
+  const splitString = str.split("");
+  // reverse() method to reverse the newly created array
+  const reverseArr = splitString.reverse();
+  //use join method to join the arr
+  const joinArr = reverseArr.join("");
+  //return str.split("").reverse().join(""),can also be done in one line
+  return joinArr;
+  }
 
-}
+
+//test3
+test('checks the object for the specified key and value',() =>{
+  const calc = {
+    add:3 + 2,
+    subtract:5-4,
+    divide:10/5,
+    multiply:10*5
+  }
+expect(calc).toStrictEqual({add:3 + 2,subtract:5-4, divide:10/5,multiply:10*5})
+});
